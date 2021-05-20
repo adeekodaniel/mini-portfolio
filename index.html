@@ -4,40 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4fd3122405.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
     <div class="container">
         <nav>
             <a href="#">Daniel</a>
-            <ul class="menu">
+            <ul class="menu" id="open-nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Project</a></li>
             </ul>
+
+            <div class="hamburger" id="menu-toggler" onclick="toggleNavbar()">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
         <main>
-            <h1>I'm <i>Daniel!</i></h1>
-            <p>I turn beautiful UI designs into code... <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut incidunt reprehenderit et unde molestiae ad, velit quo eos praesentium illo, obcaecati natus esse nesciunt cum necessitatibus aspernatur architecto. Error, assumenda!</p>
+            <section class="info">
+                <h1>I'm Daniel!</h1>
+                <p>I turn beautiful UI designs into code... 😉</p>  
+            </section>
+            <section class="myImage">
+                <img src="./undraw_Coding_re_iv62 (1).svg" alt="landing page illustration">
+            </section>  
         </main>
-        <section>
+
+        <section class="skills">
             <div class="section-container">
-                <div class="first">
+                <div class="first box">
                     <img src="/images/html.png" alt="html image" class="html">
                     <div class="card">
                         <p>The beginning of the coding is the text.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut incidunt reprehenderit et unde molestiae ad</p>
                     </div>
                 </div>
-                <div class="second">
+                <div class="second box">
                     <img src="/images/CSS-Logo.png" alt="css image" class="css">
                     <div class="card">
                         <p>Here is where the design comes in..,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut incidunt reprehenderit et unde molestiae ad</p>
                     </div>
                 </div>
-                <div class="third">
+                <div class="third box">
                     <img src="/images/JavaScript-Logo.png" alt="javascript image" class="js">
                     <div class="card">
                         <p>Here is where we power up the website - we add live to it.....Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut incidunt reprehenderit et unde molestiae ad</p>
@@ -45,9 +57,12 @@
                 </div>
             </div>
         </section>
+        
         <footer>
             <p>Proudly designed by Adeeko Daniel</p>
         </footer>
     </div>
+
+    <script src="/hamburger.js"></script>
 </body>
 </html>
