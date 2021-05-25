@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4fd3122405.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../assets/css/navbar.css">
+    <link rel="stylesheet" href="./../assets/css/skills.css">
+    <title>My Skills</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Daniel</a>
+            <ul class="menu" id="open-nav">
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="/public/about.html">About</a></li>
+                
+            </ul>
+
+            <div class="hamburger" id="menu-toggler" onclick="toggleNavbar()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="skills">
+            <!--html section-->
+            <section class="html">
+                <!--Skill Icon-->
+                <div class="skills-icon-container">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <!--Skill Description-->
+                <div class="skills-description">
+                    <p>I am very skilled in using HTML...</p>
+                    <progress id="file" value="92" max="100"> 92% </progress>
+                </div>
+            </section>
+            <!--css section-->
+            <section class="css">
+                <div class="skills-icon-container">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <!--Skill Description-->
+                <div class="skills-description">
+                    <p>I can design a website with CSS...</p>
+                    <progress id="file" value="82" max="100"> 82% </progress>
+                </div>
+            </section>
+            <!--javascript section-->
+            <section class="javascript">
+                <div class="skills-icon-container">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <!--Skill Description-->
+                <div class="skills-description">
+                    <p>I am getting more confident using Javascript...</p>
+                    <progress id="file" value="72" max="100"> 72% </progress>
+                </div>
+            </section>
+        </div>
+    </main>
+    <img src="./../images/" alt="">
+    
+
+    <footer>
+        <p>Proudly designed by Adeeko Daniel</p>
+    </footer>
+
+
+    <script src="/js/hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*about section style*/
+.about {
+  padding: 100px 200px;
+  transition: 0.3s ease;
+}
+.about-image {
+  height: 200px;
+  width: 100%;
+  margin-top: 20px;
+}
+.about-image img {
+  height: 100%;
+  width: 100%;
+}
+.about-description {
+  line-height: 1.5;
+  margin-top: 20px;
+  color: #5d001e;
+  font-size: 18px;
+}
+#keyword {
+  font-size: 24px;
+}
+footer {
+  text-align: center;
+  font-size: 18px;
+  background-color: #3e1929;
+  height: 60px;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  color: white;
+}
+
+@media (max-width: 980px) {
+  .about {
+    padding: 100px 20px;
+  }
+}
+@media (max-width: 900px) {
+  .about {
+    padding: 100px 50px;
+  }
+}
